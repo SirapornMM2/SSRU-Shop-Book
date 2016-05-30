@@ -14,7 +14,7 @@ public class SignUpActivity extends AppCompatActivity {
     private EditText nameEditText, surnameEditText, userEditText , passEditText;
     private String nameString, surString, userString, passString;
 
-
+    private static final String urlUpload = "http://swiftcodingthai.com/ssru/add_user_SRP.php";
 
 
     @Override
@@ -47,9 +47,14 @@ public class SignUpActivity extends AppCompatActivity {
 
         } else {
             //no Space
+            urlUploadNewUser();
         }
 
 
     }   //clickSign
+
+    private void urlUploadNewUser() {
+
+    }   // uplodeNewUser
 
 } //Main Class
